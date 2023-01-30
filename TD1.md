@@ -21,11 +21,14 @@ pwd
 
 ```
 mkdir test
+```
+
 
 5) Go to the general home directory (should contain folders named after each user)
 
 ```
 cd /home/
+```
 
 6) Go to your home directory
 
