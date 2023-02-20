@@ -99,8 +99,36 @@ mv antoine_letort.txt antoine_letort.txt
 cp -r notes notes_2023 
 ```
 10)Delete the first folder (notes) using the verbose option
-It didn't work with -v so I used -r
+
 ```
 rm -r notes
+```
+
+# Exercice 3
+
+1)Create a script script_1.sh in the folder linux_ex_1
+```
+cd ~/linux_ex_1
+touch script_1.sh
+```
+2)In the script, write the commands that would output the following : Script running please wait ... Done.
+```
+nano script_1.sh
+echo "Script running please wait..."
+echo "Done."
+``
+3)Quit editing and save the script
+```
+Ctrl + X
+```
+4)Display the content of the script (using a command, not from an editor)
+```
+cat script_1.sh
+```
+5)Run the script
+```
+sh script_1.sh
+```
 
 
+# Exercice 4
