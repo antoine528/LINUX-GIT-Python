@@ -221,6 +221,7 @@ cd /
 sudo su
 echo "Some informations..." > .private_file
 ```
+
 (b) Display the file content
 ```
 cat .private_file
@@ -228,7 +229,7 @@ cat .private_file
 (c) Display all the files in the folder including hidden files
 ```
 ls -a
-``
+```
 3)Modify the file in normal user mode 
 (a) Write some new information in the file
 ```
@@ -246,4 +247,4 @@ sudo chmod 777 .private_file
 (b) Display the file content
 ```
 cat .private_file
-``
+```
