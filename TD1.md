@@ -175,6 +175,7 @@ echo "Some more informations..." >> credentials
 (c) Display the file content
 ``
 cat credentials
+```
 
 On the same file :
 
