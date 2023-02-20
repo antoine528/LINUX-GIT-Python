@@ -140,38 +140,47 @@ sh script_1.sh
 ```
 echo "Secret Password: password" > credentials
 ```
+
 (b) Display the file content
 ```
 cat credentials
 ```
+
 (c) Display the current permissions
 ```
 ls -l credentials
-``
+```
 2)Change the current permissions to : read only for all users 
+
 (a) Display the new permissions
 ```
 chmod 444 credentials
 ls -l credentials
 ```
+
 (b) Modify and save the file (can't modify with new permissions)
 ```
 echo "Some more informations..." >> credentials
 ```
+
 (c) Display the file content (didn't change)
 ```
 cat credentials
 ``
+
 3)Change the permissions back to read and write for all users 
+
 (a) Display the new permissions
 ```
 chmod 666 credentials
 ls -l credentials
 ```
+
 (b) Modify and save the file (it modified this time)
 ```
 echo "Some more informations..." >> credentials
 ```
+
 (c) Display the file content
 ```
 cat credentials
