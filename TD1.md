@@ -139,7 +139,7 @@ sh script_1.sh
 (a) Write any kind of (fake) personal information within the file
 ```
 echo "Secret Password: password" > credentials
-``
+```
 (b) Display the file content
 ```
 cat credentials
@@ -173,7 +173,7 @@ ls -l credentials
 echo "Some more informations..." >> credentials
 ```
 (c) Display the file content
-``
+```
 cat credentials
 ```
 
