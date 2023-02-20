@@ -132,3 +132,82 @@ sh script_1.sh
 
 
 # Exercice 4
+
+# Exercise 4.1 : 
+
+1) Create a file credentials in the folder linux_ex_1 
+(a) Write any kind of (fake) personal information within the file
+```
+echo "Secret Password: password" > credentials
+``
+(b) Display the file content
+```
+cat credentials
+```
+(c) Display the current permissions
+```
+ls -l credentials
+``
+2)Change the current permissions to : read only for all users 
+(a) Display the new permissions
+```
+chmod 444 credentials
+ls -l credentials
+```
+(b) Modify and save the file (can't modify with new permissions)
+```
+echo "Some more informations..." >> credentials
+```
+(c) Display the file content (didn't change)
+```
+cat credentials
+``
+3)Change the permissions back to read and write for all users 
+(a) Display the new permissions
+```
+chmod 666 credentials
+ls -l credentials
+```
+(b) Modify and save the file (it modified this time)
+```
+echo "Some more informations..." >> credentials
+```
+(c) Display the file content
+``
+cat credentials
+
+On the same file :
+
+Add the execute permission to the owner (a) Display the new permissions
+chmod u+x credentials
+ls -l credentials
+Remove the read permission to other users (a) Display the new permissions
+chmod o-r credentials
+ls -l credentials
+Change the permissions to read, write and execute for all users (a) Display the new permissions
+chmod 777 credentials
+ls -l credentials
+Exercise 4.2 : Access root files
+
+Go to the root folder
+cd /
+Create a file in root user mode named .private_file (a) Write some information in the file
+sudo su
+echo "Some informations..." > .private_file
+(b) Display the file content
+
+cat .private_file
+(c) Display all the files in the folder including hidden files
+
+ls -a
+Modify the file in normal user mode (a) Write some new information in the file
+sudoedit .private_file
+"More informations..."
+(b) Display the file content
+
+cat .private_file
+Change permissions to read, write and execute for all users (a) Modify the file content in normal user mode
+sudo chmod 777 .private_file
+(b) Display the file content
+
+cat .private_file
