@@ -188,36 +188,62 @@ cat credentials
 
 On the same file :
 
-Add the execute permission to the owner (a) Display the new permissions
+1)Add the execute permission to the owner 
+(a) Display the new permissions
+```
 chmod u+x credentials
 ls -l credentials
-Remove the read permission to other users (a) Display the new permissions
+```
+2)Remove the read permission to other users 
+(a) Display the new permissions
+```
 chmod o-r credentials
 ls -l credentials
-Change the permissions to read, write and execute for all users (a) Display the new permissions
+```
+3)Change the permissions to read, write and execute for all users 
+(a) Display the new permissions
+```
 chmod 777 credentials
 ls -l credentials
-Exercise 4.2 : Access root files
+```
 
-Go to the root folder
+
+# Exercise 4.2 : 
+
+1)Go to the root folder
+```
 cd /
-Create a file in root user mode named .private_file (a) Write some information in the file
+```
+
+2)Create a file in root user mode named .private_file 
+(a) Write some information in the file
+```
 sudo su
 echo "Some informations..." > .private_file
+```
 (b) Display the file content
-
+```
 cat .private_file
+```
 (c) Display all the files in the folder including hidden files
-
+```
 ls -a
-Modify the file in normal user mode (a) Write some new information in the file
+``
+3)Modify the file in normal user mode 
+(a) Write some new information in the file
+```
 sudoedit .private_file
 "More informations..."
+```
 (b) Display the file content
-
+```
 cat .private_file
+```
 Change permissions to read, write and execute for all users (a) Modify the file content in normal user mode
+```
 sudo chmod 777 .private_file
+```
 (b) Display the file content
-
+```
 cat .private_file
+``
