@@ -166,7 +166,7 @@ echo "Some more informations..." >> credentials
 (c) Display the file content (didn't change)
 ```
 cat credentials
-``
+```
 
 3)Change the permissions back to read and write for all users 
 
