@@ -94,10 +94,13 @@ mv antoine_letort.txt notes
 ```
 mv antoine_letort.txt antoine_letort.txt
 ```
-Make a copy of this folder, name it notes_2023
+9)Make a copy of this folder, name it notes_2023
+```
 cp -r notes notes_2023 
-Delete the first folder (notes) using the verbose option
+```
+10)Delete the first folder (notes) using the verbose option
 It didn't work with -v so I used -r
-
+```
 rm -r notes
+
 
