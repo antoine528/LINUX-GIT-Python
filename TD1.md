@@ -116,7 +116,7 @@ touch script_1.sh
 nano script_1.sh
 echo "Script running please wait..."
 echo "Done."
-``
+```
 3)Quit editing and save the script
 ```
 Ctrl + X
