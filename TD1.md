@@ -136,9 +136,10 @@ sh script_1.sh
 # Exercise 4.1 : 
 
 1) Create a file credentials in the folder linux_ex_1 
+
 (a) Write any kind of (fake) personal information within the file
 ```
-echo "Secret Password: password" > credentials
+echo "J'ai 30 ans" > credentials
 ```
 
 (b) Display the file content
@@ -160,7 +161,7 @@ ls -l credentials
 
 (b) Modify and save the file (can't modify with new permissions)
 ```
-echo "Some more informations..." >> credentials
+echo "fichier modifié" >> credentials
 ```
 
 (c) Display the file content (didn't change)
@@ -178,7 +179,7 @@ ls -l credentials
 
 (b) Modify and save the file (it modified this time)
 ```
-echo "Some more informations..." >> credentials
+echo "fichier modifié et sauvegardé" >> credentials
 ```
 
 (c) Display the file content
