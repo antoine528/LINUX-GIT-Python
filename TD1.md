@@ -261,7 +261,7 @@ sudo chmod 666 .private_file
 ```
 2)Set the new file owner as the current user
 ```
-sudo chown plejamtel .private_file
+sudo chown  .private_file
 ```
 3)Change permissions of .private_file to read and write for all users, in normal user mode
 ```
