@@ -296,4 +296,22 @@ sudo apt-get install tmux
 7)Launch tmux
 ```
 tmux
+```
+8)Say "Hello session 0" using bash in your current tmux session
+```
+echo "Hello session 0"
+```
+9)Launch cmatrix in your current tmux session
+```
+cmatrix
+```
+10)Detach from the current tmux session (without stopping cmatrix)
+```
+CTRL + B    D
+```
+11)Create a new tmux session
+```
+tmux new -s MySes
+
+
 
