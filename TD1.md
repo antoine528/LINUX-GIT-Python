@@ -217,6 +217,7 @@ cd /
 ```
 
 2)Create a file in root user mode named .private_file 
+
 (a) Write some information in the file
 ```
 sudo su
@@ -232,6 +233,7 @@ cat .private_file
 ls -a
 ```
 3)Modify the file in normal user mode 
+
 (a) Write some new information in the file
 ```
 sudoedit .private_file
@@ -241,7 +243,9 @@ sudoedit .private_file
 ```
 cat .private_file
 ```
-Change permissions to read, write and execute for all users (a) Modify the file content in normal user mode
+5)Change permissions to read, write and execute for all users 
+
+(a) Modify the file content in normal user mode
 ```
 sudo chmod 777 .private_file
 ```
@@ -249,3 +253,19 @@ sudo chmod 777 .private_file
 ```
 cat .private_file
 ```
+# Exercice 4.3:
+
+1)Change permissions of .private_file to read and write for all users, in normal user mode
+```
+sudo chmod 666 .private_file
+```
+2)Set the new file owner as the current user
+```
+sudo chown plejamtel .private_file
+```
+3)Change permissions of .private_file to read and write for all users, in normal user mode
+```
+chmod 666 .private_file
+```
+
+
