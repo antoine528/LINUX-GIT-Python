@@ -261,11 +261,39 @@ sudo chmod 666 .private_file
 ```
 2)Set the new file owner as the current user
 ```
-sudo chown  .private_file
+sudo chown antoine .private_file
 ```
 3)Change permissions of .private_file to read and write for all users, in normal user mode
 ```
 chmod 666 .private_file
 ```
+# Exercice 4.4
 
+1)Update your main package manager named apt
+```
+sudo apt update
+```
+2)Upgrade apt
+```
+sudo apt upgrade
+```
+3)Install the package cmatrix
+```
+sudo apt-get install cmatrix
+```
+4)Launch cmatrix
+```
+cmatrix
+```
+5)Quit cmatrix
+```
+CTRL + C
+```
+6)Install the package tmux
+```
+sudo apt-get install tmux
+```
+7)Launch tmux
+```
+tmux
 
